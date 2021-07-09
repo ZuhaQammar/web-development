@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- shorcut to add comment is ctrl+/ -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+<!-- to  link external css sheet  -->
+    <link rel="stylesheet" href="zuha.css">
+    <!-- to link external javascript sheet -->
+    <script src="zuha.js"></script>
+</head>
+<html>
+<body>
+    <!-- headings -->
+<h1>mooli</h1>
+<h2>mooli</h2>
+<h3>mooli</h3>
+<h4>mooli</h4>
+<h5>mooli</h5>
+<h6>mooli</h6>
+
+<!-- i use "lorem40"for dummy text of 40 words   -->
+<!-- then to avoid horizontal scroll bar i use "toggle word wrap"from command pallete -->
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nemo eius perspiciatis non tempore, saepe illo fugiat mollitia veritatis libero et numquam doloribus! Perferendis laboriosam ipsa eligendi omnis incidunt debitis doloribus voluptatibus, cupiditate animi fuga? Labore corporis necessitatibus aperiam consequuntur!</p>
+<!-- i use p*5 then 5 paragraphs format occur -->
+<p><strong>zuha</strong></p>
+ <!-- html ignore space so in order to add space between paragraphs we use "br" -->
+ <br>
+  <!-- br is a self closing tag. -->
+<p><em>zoha</em></p>
+<hr>
+<!-- hr is a horizontal rule -->
+<p>samia</p>
+<p>mishal</p>
+<p>moli</p>
+<!-- "ctrl+enter" to jump into the new line incase if i am between the previous line -->
+<!-- to add external links links "<a href" -->
+<a href="http://google.com">Go to Google</a>
+<a href="http://facebook.com">Go to facebook</a>
+<a href="http://github.com">Go to GitHub</a>
+<br>
+<br>
+<br>
+
+<!-- to open link in the new tab then -->
+<!-- here at the last i use "br" tag to beautify the view-->
+<a href="http://google.com" target="_blank">Go to Google</a><br>
+<a href="http://facebook.com" target="_blank">Go to facebook</a><br>
+<a href="http://github.com" target="_blank">Go to GitHub</a><br>
+<!-- to add internal link or file -->
+<a href="/ahmed.html" target="_blank">AHMED</a><br>
+<!-- to add image "img" -->
+<!-- Image is not present hence alt text is shown -->
+<img src="mooli.png" alt="error loading the image">
+<img src="cat.jfif" width="600" length="500" alt="">
+<!-- ordered list -->
+<ol>
+     <li>ABOUT</li>
+     <li>SIGNUP</li>
+     <li>LOGIN</li>
+
+</ol>
+
+<!-- unordered list -->
+<ul>
+   <li>ABOUT</li>
+    <li>signup</li>
+    <li>login</li>
+</ul>
+<!-- HTML Tables -->
+<table>
+    <thead>
+<tr>
+    <th>coder name</th>
+    <th>Assistant name</th>
+    <th>pet name</th>
+</tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Harry</td>
+            <td>ABdullah</td>
+            <td>molli</td>
+
+        </tr>
+    </tbody>
+</table>
+<!-- FORMS (very important topic) -->
+<h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf" selected>Swift</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+    <!-- concept of inline and block line -->
+    <!-- here we have to use Css to know the main difference between inline and block line elements -->
+    <strong style="border: 2px solid red;">this is a paragraph</strong> <a style="border: 2px solid blue;">
+        this is also a paragraph</a>
+    <span style="border: 2px solid red;">this is a span</span> <span style="border: 2px solid red;">this is also a span</span>
+    <!-- Ids and Classes(class can be given to multiple elements but Id is given to unique elemet) -->
+    <h3>Ids and classes tutorial</h3>
+    <div id="mainBox" class="redBg blackBorder">
+        this is mainbox
+    </div>
+    <span class="redBg"></span>
+    <!-- Select and press ctrl + / to comment -->
+    <!-- Emmet -->
+    <!-- . is for class and # is for id -->
+    <!-- span.redBg -->
+    <span class="redBg"></span>
+    <!-- span#mainbox -->
+    <span id="mainSpan"></span>
+    <div class="redBg blackBorder anotherClass"></div>
+
+    <!-- Emmet takes div tag as default -->
+    <div class="blackBackground"></div>
+
+    <!-- Creating multiple elements using Emmet -->
+    <!-- span.myClass.myClass2.myClass3*4 + <Tab> to print 4 similar elements using Emmet -->
+    <span class="myClass myClass2 myClass3">First</span>
+    <span class="myClass myClass2 myClass3">Second</span>
+    <span class="myClass myClass2 myClass3">Third</span>
+    <span class="myClass myClass2 myClass3">Fourth</span>
+<!-- Entities(we use entities to type special characters. we can take it form internet by searching HTML entities references) -->
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+    <div class="container">
+        <!-- for space we use &nbsp -->
+        <p>This is another     paragraph with two spaces</p>
+        <!-- we are unable to show <p> by writting simply on website so &lt;p&gt; -->
+        <p>Paragraph is written like this <p> </p>
+        <!-- &pound; -->
+        <p>Pound is written like this £ </p>
+<!-- &copy; -->
+        <p>Copyright is written like this © </p>
+        <!-- &rAarr; -->
+        <p>Another character is  ⇛ </p>
+        <!-- &fra14;  -->
+        <p>Another character is  ¼ </p>
+        <!-- &#8203; -->
+        <p>Empty character is written like this ​ </p>
+    </div>
+    <!-- sementic tags (used to help in ranking the website) -->
+    <h3>Semantic Elements</h3>
+    <details>
+        <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.</summary>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil placeat, aliquam quae vero, hic impedit nisi commodi cum veritatis, culpa quisquam quis qui quas consequatur sapiente explicabo repellat ut sint?
+    </details>
+</body>
+</html>
